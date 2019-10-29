@@ -42,9 +42,10 @@ export default function ServicesIndex() {
     ])
 
 return (
-    <>
     <View style={styles.container}>
     <Text style={styles.ServicesTitle}>Serviços</Text>
+    <SafeAreaView style={styles.ContainerFlatList}>
+        <ScrollView>
 
     {/* <SafeAreaView style={styles.ContainerFlatList}>
 
@@ -67,8 +68,6 @@ keyExtractor={item => item.id}
 </SafeAreaView> */}
 
 
-    <SafeAreaView style={styles.ContainerFlatList}>
-        <ScrollView>
     
     <View style={styles.ServicesCardItem}>
         <View style={styles.ContainerTitleItemService}>
@@ -134,10 +133,28 @@ keyExtractor={item => item.id}
             <Text style={styles.PriceItemService}>R$ 30,00</Text>
         </View>
     </View>
+    <View style={styles.ServicesCardItem}>
+        <View style={styles.ContainerTitleItemService}>
+            <Text style={styles.TitleItemService}>Sombrancelha Henna</Text>
+        </View>
+        <View style={styles.ContainerPriceItemService}>
+            <Text style={styles.PriceItemService}>R$ 30,00</Text>
+        </View>
+    </View>
+    <View style={styles.ServicesCardItem}>
+        <View style={styles.ContainerTitleItemService}>
+            <Text style={styles.TitleItemService}>Sombrancelha Henna Ultimo</Text>
+        </View>
+        <View style={styles.ContainerPriceItemService}>
+            <Text style={styles.PriceItemService}>R$ 30,00</Text>
+        </View>
+    </View>
+  
+    
 
     </ScrollView> 
     </SafeAreaView> 
-    </>
+    </View>
 )
 
 
@@ -153,7 +170,8 @@ const styles = StyleSheet.create({
         // alignContent: 'stretch',
     },
     ContainerFlatList: {
-        height: 400,
+        // height: 'auto',
+        height: 580,
     },
     ServicesTitle: {
         fontSize: 25,
