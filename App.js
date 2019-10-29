@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { StyleSheet} from 'react-native';
 
 import SplashScreen from './src/components/splashscreen/splashscreen';
-import Home from './src/home/index';
+import Routes from './src/routes/homeRoutes';
 
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
 if(splashscreen){
   return <SplashScreen />;
 }else{
-  return <Home />;
+  return <Routes />;
 }
 
 }

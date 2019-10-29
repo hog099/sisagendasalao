@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 
 import Header from '../components/header/index';
+import Services from '../services/index';
 
 export default function Home() {
 
@@ -11,7 +12,7 @@ export default function Home() {
             <View style={styles.BannerSpon}>
                 <Text style={styles.BannerSponText}>Salão Laila e Leila</Text>
             </View>
-
+            <Services />
         </>
     );
 }
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
         height: 109,
         opacity: 1,
         margin: 0,
-        backgroundColor: "#1ABC9C",
+        backgroundColor: "#3498DB",
     },
     BannerSponText: {
         fontSize: 25,
